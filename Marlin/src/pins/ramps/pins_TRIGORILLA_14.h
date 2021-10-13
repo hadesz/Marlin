@@ -122,6 +122,35 @@
   #define SD_DETECT_PIN                       49
 #endif
 
+#define TMC2209_UART_PIN 11
+
+#undef X_SERIAL_TX_PIN
+#define X_SERIAL_TX_PIN                   TMC2209_UART_PIN
+#undef X_SERIAL_RX_PIN
+#define X_SERIAL_RX_PIN                   TMC2209_UART_PIN
+#undef Y_SERIAL_TX_PIN
+#define Y_SERIAL_TX_PIN                   TMC2209_UART_PIN
+#undef Y_SERIAL_RX_PIN
+#define Y_SERIAL_RX_PIN                   TMC2209_UART_PIN
+#undef Z_SERIAL_TX_PIN
+#define Z_SERIAL_TX_PIN                   TMC2209_UART_PIN
+#undef Z_SERIAL_RX_PIN
+#define Z_SERIAL_RX_PIN                   TMC2209_UART_PIN
+/*#undef E0_SERIAL_TX_PIN
+#define E0_SERIAL_TX_PIN                   TMC2209_UART_PIN
+#undef E0_SERIAL_RX_PIN
+#define E0_SERIAL_RX_PIN                   TMC2209_UART_PIN //*/
+#undef E1_SERIAL_TX_PIN
+#define E1_SERIAL_TX_PIN                   TMC2209_UART_PIN
+#undef E1_SERIAL_RX_PIN
+#define E1_SERIAL_RX_PIN                   TMC2209_UART_PIN //*/
+#undef Z2_SERIAL_TX_PIN
+#define Z2_SERIAL_TX_PIN                   TMC2209_UART_PIN
+#undef Z2_SERIAL_RX_PIN
+#define Z2_SERIAL_RX_PIN                   TMC2209_UART_PIN //*/
+
+
+
 #include "pins_RAMPS.h"
 
 //

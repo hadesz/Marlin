@@ -106,10 +106,12 @@
   #define X_MAX_PIN                           43
   #define Y_STOP_PIN                          19
 #elif EITHER(ANYCUBIC_LCD_CHIRON, ANYCUBIC_LCD_I3MEGA)
-  #define Y_STOP_PIN                          42
-  #define Z2_MIN_PIN                          43
+  #define Y_STOP_PIN                          43
+  //#define Z2_MIN_PIN                          43
+  //#define X_MAX_PIN                           43
+  #define Z_MIN_PIN                            42
   #ifndef Z_MIN_PROBE_PIN
-    #define Z_MIN_PROBE_PIN                    2
+    //#define Z_MIN_PROBE_PIN                    42
   #endif
   #ifndef FIL_RUNOUT_PIN
     #if ENABLED(ANYCUBIC_LCD_CHIRON)
@@ -122,7 +124,7 @@
   #define SD_DETECT_PIN                       49
 #endif
 
-#define TMC2209_UART_PIN 11
+#define TMC2209_UART_PIN 12
 
 #undef X_SERIAL_TX_PIN
 #define X_SERIAL_TX_PIN                   TMC2209_UART_PIN
